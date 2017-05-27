@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>970</width>
+    <height>707</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Outlier Detection</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QTabWidget" name="qTabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="Page1">
+       <attribute name="title">
+        <string>TRAOD</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_1">
+            <item>
+             <widget class="QLabel" name="labelCloseD">
+              <property name="text">
+               <string>D: </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelOutSegP">
+              <property name="text">
+               <string>P: </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelOutTrajF">
+              <property name="text">
+               <string>F: </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLineEdit" name="lineEditCloseD">
+              <property name="text">
+               <string>85.0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditOutSegP">
+              <property name="text">
+               <string>0.95</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditOutTrajF">
+              <property name="text">
+               <string>0.2</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="labelWeightPar">
+              <property name="text">
+               <string>WeightPar: </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelWeightAngle">
+              <property name="text">
+               <string>WeightAngle: </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelWeightPer">
+              <property name="text">
+               <string>WeightPer:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QLineEdit" name="lineEditWeightPar">
+              <property name="text">
+               <string>1.0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditWeightAngle">
+              <property name="text">
+               <string>10.0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditWeightPer">
+              <property name="text">
+               <string>1.0</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditFilePathT">
+          <property name="text">
+           <string>D:\\Diplomka\\hurricane1990_2006.tra</string>
+          </property>
+          <property name="placeholderText">
+           <string>File Path</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QPushButton" name="pushButtonTRAODHurricane">
+            <property name="text">
+             <string> TRAOD Hurricane</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonTRAODPorto">
+            <property name="text">
+             <string>TRAOD Porto Taxi</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutGraphTRAOD"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Page2">
+       <attribute name="title">
+        <string>iBoat</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QLabel" name="labelTheta">
+              <property name="text">
+               <string>Theta: </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelLambda">
+              <property name="text">
+               <string>Lambda: </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="QLineEdit" name="lineEditTheta">
+              <property name="text">
+               <string>0.05</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditLambda">
+              <property name="text">
+               <string>150</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <item>
+             <widget class="QLabel" name="labelCellNumberX">
+              <property name="text">
+               <string>Cell count X: </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelCellNumberY">
+              <property name="text">
+               <string>Cell count Y: </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLineEdit" name="lineEditCellNumberX">
+              <property name="text">
+               <string>400</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEditCellNumberY">
+              <property name="text">
+               <string>400</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditFilePathI">
+          <property name="text">
+           <string>D:\\Diplomka\\train_preproc_data_sort_SD7.tra</string>
+          </property>
+          <property name="placeholderText">
+           <string>File Path</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QPushButton" name="pushButtonIBoatHurricane">
+            <property name="text">
+             <string>iBoat Hurricane</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonIBoatPortoTaxi">
+            <property name="text">
+             <string>iBoat Porto Taxi</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutGraphIBoat">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayoutTrajTable">
+            <item>
+             <widget class="QTableWidget" name="tableWidgetIBoat">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="rowCount">
+               <number>10</number>
+              </property>
+              <property name="columnCount">
+               <number>2</number>
+              </property>
+              <attribute name="horizontalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+              <attribute name="horizontalHeaderDefaultSectionSize">
+               <number>80</number>
+              </attribute>
+              <attribute name="horizontalHeaderMinimumSectionSize">
+               <number>20</number>
+              </attribute>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+              <row/>
+              <row/>
+              <row/>
+              <row/>
+              <row/>
+              <row/>
+              <row/>
+              <row/>
+              <row/>
+              <row/>
+              <column/>
+              <column/>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonTRAODHurricane</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runTRAODHurricane()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>351</x>
+     <y>371</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>7</x>
+     <y>285</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonTRAODPorto</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runTRAODPortoTaxi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>776</x>
+     <y>375</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>969</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonIBoatPortoTaxi</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runIBoatPortoTaxi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>754</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>967</x>
+     <y>444</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonIBoatHurricane</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>runIBoatHurricane()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>180</x>
+     <y>374</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>runTRAODHurricane()</slot>
+  <slot>runTRAODPortoTaxi()</slot>
+  <slot>runIBoatHurricane()</slot>
+  <slot>runIBoatPortoTaxi()</slot>
+ </slots>
+</ui>
